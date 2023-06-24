@@ -271,7 +271,7 @@ class Model_cifar_bn(nn.Module):
             # nn.Dropout(dropout_value)
         ) 
     def forward(self, x):
-        shortcut = x
+        
         # print(shortcut.shape)
         x = self.convblock1(x)
         # print(x.shape)
@@ -427,7 +427,7 @@ class Model_cifar_gn(nn.Module):
             # nn.Dropout(dropout_value)
         ) 
     def forward(self, x):
-        shortcut = x
+        
         # print(shortcut.shape)
         x = self.convblock1(x)
         # print(x.shape)
